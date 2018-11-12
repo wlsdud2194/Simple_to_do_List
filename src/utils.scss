@@ -1,0 +1,18 @@
+@import '~open-color/open-color';
+@import '~include-media/dist/include-media';
+
+$breakpoints: (
+    huge: 1200px,
+    large: 1024px,
+    medium: 800px,
+    small: 400px,
+);
+
+// @mixin reaction() {
+//     @include media('<medium'){
+//         .page-templage{
+//             margin-top: 3rem;
+//             width: 300px;
+//         }
+//     }
+// }

@@ -1,0 +1,41 @@
+@import '../../utils.scss';
+
+.page-template{
+    margin: 5rem auto 0;
+    width: 650px;
+    background: $oc-blue-6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 2rem 0 0;
+    border-radius: 10px;
+
+    // @media(max-width: 768px){
+    //     margin-top: 2rem;
+    //     width: calc(100% -2rem);
+    // }
+    @include media("<huge"){
+        margin-top: 3.5rem;
+        width: 580px;   
+    }
+    @include media("<large"){
+        margin-top: 3rem;
+        width: 510px;   
+    }
+    @include media("<medium"){
+        margin-top: 2.5rem;
+        width: 480px;   
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    .content{
+        background: white;
+        margin-top: 2rem;
+    }
+
+    
+}

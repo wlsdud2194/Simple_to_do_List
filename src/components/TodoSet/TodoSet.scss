@@ -1,0 +1,41 @@
+@import '../../utils.scss';
+
+.todo-set{
+    display: flex;
+    padding: 15px 0 15px;
+    font-size: 0.9rem;
+
+    .left{
+        margin-left: 8px;
+    }
+    // .todo-look{
+    //     display: flex;
+    //     margin: 0 auto;
+    //     padding: 0;
+    //     list-style: none;
+    //     &>li{
+    //         margin-right: 8px;
+    //         margin-left: 8px;
+    //         padding:0 3px 0;
+    //         cursor: pointer;
+    //     }
+    // }
+    .clear{
+        cursor: pointer;
+        margin-right: 8px;
+        text-align: right;
+        color: gray;
+        &:hover{
+            color: black;
+            text-decoration: underline;
+        }
+    }
+    &>*{
+        flex:1;
+    }
+
+    // .choosing{
+    //     border: 2px solid $oc-blue-6;
+    //     border-radius: 4px;
+    // }
+}
