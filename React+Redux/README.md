@@ -1,3 +1,6 @@
+### Explanation
+>라이브러리 immutable과 react-redux를 사용하였다
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
