@@ -1,0 +1,143 @@
+@import '../utils.scss';
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+$Osw: 'Oswald', sans-serif;
+
+*{
+    font-family: $Osw;
+}
+
+//Template
+.page-template{
+    margin-top: 4rem;
+    margin-right:  auto;
+    margin-left: auto;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0,0,0,0.23);
+    // padding-top: 2rem;
+
+    h1{
+        padding: 1.5rem 0 1.5rem;
+        background-color: $oc-blue-6;
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 300;
+        margin: 0;
+    }
+    // .content{
+    //     margin-top: 2rem;
+    // }
+}
+
+
+//input 
+.todo-input{
+    border-top: 1px solid $oc-gray-2;
+    border-bottom: 1px solid $oc-blue-6; 
+    display: flex;
+    padding: 1rem;
+
+    input{
+        flex: 1;
+        font-size: 1.1rem;
+        outline: none;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid $oc-gray-4;
+        &:focus{
+            border-bottom: 1px solid $oc-blue-3;
+        }
+    }
+    .add-button{
+        width: 5rem;
+        height: 2rem;
+        margin-left: 1rem;
+        border: 1px solid $oc-blue-6;
+        border-radius: 5px;
+        color: $oc-blue-6;
+        font-weight: 500;
+        font-size: 1.1rem;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            background: $oc-blue-6;
+            color: white;
+        }
+        &:active{
+            background: $oc-green-8;
+        }
+    }
+}
+
+
+//item
+.todo-item{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .tick{
+        margin-right: 1rem;
+    }
+    .text{
+        flex: 1;
+        word-break: break-all;
+        &.done{
+            text-decoration: line-through;
+        }
+    }
+    .delete{
+        visibility: hidden;
+        margin-left: 1rem;
+        color: $oc-red-7;
+        font-size: 0.8rem;
+        &:hover{
+            color: $oc-red-5;
+            text-decoration: line-through;
+        }
+    }
+    &:nth-child(odd){
+        background: $oc-gray-0;
+    }
+    &:hover{
+        background: $oc-gray-1;
+        .delete{
+            visibility: visible;
+        }
+    }
+}
+
+.todo-item +.todo-item{
+    border-top: 1px solid $oc-gray-1;
+}
+
+.setting_bar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    
+    &>*{
+        // flex: 1;
+        display: inline;
+    }
+    .op_1{
+        flex-grow: 1;
+    }
+    .op_2{
+        color: $oc-gray-6;
+        text-align: right;
+
+        &:hover{
+            cursor: pointer;
+            color: black;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+}
