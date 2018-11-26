@@ -11,20 +11,20 @@
 - 코드의 일부분 ( reducer )
 This is a normal paragraph:
 
-    [TOGGLE]: (state, action) => {
-        //비구조화 할당
-        const { payload: index } = action;
-        
-        //값을 변경한 객체 반환 ( immutable )
-        return state.updateIn([point, 'done'], done => !done);
-        // return state.setIn([index, 'done'], !state.getIn([0, index]));
-    },
+  [TOGGLE]: (state, action) => {
+      //비구조화 할당
+      const { payload: index } = action;
 
-    [REMOVE]: (state, action) => {
-        cont { paylod: index } = action;
+      //값을 변경한 객체 반환 ( immutable )
+      return state.updateIn([point, 'done'], done => !done);
+      // return state.setIn([index, 'done'], !state.getIn([0, index]));
+  },
 
-        return state.delete(point);
-    },
+  [REMOVE]: (state, action) => {
+      cont { paylod: index } = action;
+
+      return state.delete(point);
+  },
 
 
 <hr/><hr/>
