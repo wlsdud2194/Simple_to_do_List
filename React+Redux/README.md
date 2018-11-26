@@ -6,7 +6,8 @@
 ----------------------
 * Todo는 각자의 id값을 가지는데, 토글하거나 삭제할 때 해당 태그의 id값을 받아 id의 값과 같은 index를 토글하고 삭제한다
 ( id가 5일때, index가 5인 태그를 토글하거나 삭제한다 )
-  - 문제점: Todo가 삭제 된다면 이전처럼 id값이 5일때 index 값이 5인 태그를 토글하거나 삭제되는 것이 아닌 id값이 5인 태그가 아닌 index 5에 존재하는 태그가 토글 될 것 이다.
+
+문제점: 문제는 Todo를 삭제할 때 일어난다 이전처럼 id값이 5일때 index 값이 5인 태그를 토글하거나 삭제되는 것이 아닌 id값이 5인 태그가 아닌 index 5에 존재하는 태그가 토글 될 것 이다.
   
  
 - 코드의 일부분 ( reducer )
@@ -27,7 +28,10 @@
 },
 ~~~
 
+
 <hr/><hr/>
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
