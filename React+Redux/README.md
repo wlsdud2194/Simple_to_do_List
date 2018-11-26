@@ -11,9 +11,10 @@
   
 - 코드의 일부분 ( reducer )
 
+
 This is a normal paragraph:
 
-    [TOGGLE]: (state, action) => {
+     [TOGGLE]: (state, action) => {
       //비구조화 할당
       const { payload: index } = action;
 
