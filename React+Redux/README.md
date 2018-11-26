@@ -1,8 +1,30 @@
 # Explanation
+>리액트에서 리덕스를 이용하여 상태관리를 하였다.
 >라이브러리 immutable과 react-redux를 사용하였다
 
+##Problum (문제점)
+----------------------
+*Todo는 각자의 id값을 가지는데 토글하거나 삭제할 때 해당 값의 id 값을 받아서 그 index  // 코드의 일부분 ( reducer )
+  ->문제점: 삭제 되었을때 
+
+This is a normal paragraph:
+      [TOGGLE]: (state, action) => {
+        //비구조화 할당
+        const { payload: index } = action;
+        
+        //값을 변경한 객체 반환 ( immutable )
+        return state.updateIn([point, 'done'], done => !done);
+        // return state.setIn([index, 'done'], !state.getIn([0, index]));
+    },
+
+    [REMOVE]: (state, action) => {
+        cont { paylod: index } = action;
+
+        return state.delete(point);
+    },
 
 
+<hr/><hr/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
