@@ -1,0 +1,115 @@
+@import '~open-color/open-color';
+
+$main_color: #FA7268;
+
+.statusImg {
+    padding: 3rem 0 3rem;
+}
+
+.template {
+    box-shadow: 0px 0px 10px #d9d9d9;
+    -moz-box-shadow: 0px 0px 10px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 10px #d9d9d9;
+    background-color: white;
+    width: 500px;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 7px;
+       
+    & .title {
+        color: $main_color;
+        font-size: 3rem;
+        margin: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.todo-inputArea{
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid $main_color;
+    border-bottom: 1px solid $main_color;
+
+    & .todoInput {
+        flex: 1;
+        outline: none;
+        padding-left: 0.6rem;
+        border: none;
+        border-bottom: 1px solid $oc-gray-2;
+        transition: border-bottom 1s;
+
+        &:focus {
+            color: $main_color;
+	        text-shadow: 0px 0px 0px #555555;  
+	        -webkit-text-fill-color: transparent;
+            border-bottom: 1px solid $main_color;
+        }
+    }
+
+    & .addBtn {
+        cursor: pointer;
+        color: $oc-gray-8;
+        font-weight: 500;
+        font-size: 1.1rem;
+        border: 1px solid $main_color;
+        border-radius: 4px;
+        padding: 0.5rem 1.3rem 0.5rem;
+        margin: 0 1rem 0;
+        transition: background-color 0.5s;
+
+        &:hover {
+            color: white;
+            background-color: $main_color;
+        }
+    }
+}
+
+.todo-item {
+    cursor: pointer;
+    display: flex;
+    padding: 1rem 3rem 1rem;
+    border-bottom: 1px solid $oc-gray-2;
+
+    .text {
+        flex: 1;
+        text-align: left;
+        padding-left: 1.2rem;
+    }
+
+    .delete {
+        cursor: pointer;
+        color: red;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: line-through;
+        }
+    }
+    .done{
+        text-decoration: line-through;
+    }
+
+    input[id="cb"] + label {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid $oc-gray-3;
+        cursor: pointer;
+    }
+    input[id="cb"]:checked + label {
+        background-color: $main_color;
+    }
+    input[id="cb"] {
+        display: none;
+    }
+
+    &:nth-child(odd) {
+        background-color: $oc-gray-0;
+    }
+    &:hover {
+        background-color: $oc-gray-2;
+    }  
+}
