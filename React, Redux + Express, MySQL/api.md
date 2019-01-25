@@ -14,7 +14,7 @@
 
 ```json
 {
-    "status": 200,
+    "status": 200,
     "code": 1,
     "todos": [
         {
