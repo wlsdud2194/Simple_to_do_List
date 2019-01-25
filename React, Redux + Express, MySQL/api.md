@@ -114,7 +114,7 @@ axios.put('/api/todo/2');
      {
          "id": 2,
          "text": "node.js",
-         "done": 1            // 수행상태를 토글
+         "done": 1           // 수행상태를 토글
      },
      {
          "id": 3,
