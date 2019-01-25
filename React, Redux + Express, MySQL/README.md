@@ -1,9 +1,9 @@
-# Todo ³ëÆ®
+# Todo ë…¸íŠ¸
 
-Áö±Ý ±îÁö ¹è¿î °ÍÀ» ÀÌ¿ëÇÏ¿© Todo ¸®½ºÆ®¿Í RESTful API¸¦ ¸¸µé¾î °£´ÜÇÑ À¥ ÇÁ·ÎÅäÄÝÀ» ¸¸µé¾ú½À´Ï´Ù.
+ì§€ê¸ˆ ê¹Œì§€ ë°°ìš´ ê²ƒì„ ì´ìš©í•˜ì—¬ Todo ë¦¬ìŠ¤íŠ¸ì™€ RESTful APIë¥¼ ë§Œë“¤ì–´ ê°„ë‹¨í•œ ì›¹ í”„ë¡œí† ì½œì„ ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤.
 
 
-
+### Frontend
 
 - React.js
 
