@@ -101,7 +101,7 @@ axios.put('/api/todo/2');
 
 **Response**
 
-```json
+```
 {
  "status": 200,
  "code": 1,
