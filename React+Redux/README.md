@@ -2,7 +2,7 @@
 >React
 >Redux (immutuble, react-redux)
 
-## Problum 
+## Problem 
 ----------------------
 * Todo는 각자의 id값을 가지는데, 토글하거나 삭제할 때 해당 태그의 id값을 받아 id의 값과 같은 index를 토글하고 삭제한다
 ( id가 5일때, index가 5인 태그를 토글하거나 삭제한다 )
