@@ -1,6 +1,6 @@
-# Explanation
->리액트에서 리덕스를 이용하여 상태관리를 하였다.
->라이브러리 immutable과 react-redux를 사용하였다
+# Using lib
+>React
+>Redux (immutuble, react-redux)
 
 ## Problum 
 ----------------------
