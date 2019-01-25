@@ -28,7 +28,7 @@ class TodoInputContainer extends Component {
         
         return (
             <TodoInput 
-                value={text}
+                text={text}
                 onChange={handleChange}
                 onInsert={handleInsert}
             />
