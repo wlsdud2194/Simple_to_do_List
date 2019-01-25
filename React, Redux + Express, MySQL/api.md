@@ -15,21 +15,21 @@
 ```json
 {
     "status": 200,
-    "code": 1,
-    "todos": [
-        {
-            "id": 1,
-            "text": "react.js 하기",
-            "done": 0
-        },
-        {
-            "id": 2,
-            "text": "node.js로 서버 연동하기",
-            "done": 0
-        }
-     ],
-     
-    "desc": "successful todos"
+    "code": 1,
+    "todos": [
+        {
+            "id": 1,
+            "text": "react.js 하기",
+            "done": 0
+        },
+        {
+            "id": 2,
+            "text": "node.js로 서버 연동하기",
+            "done": 0
+        }
+    ],
+    
+    "desc": "successful todos"
 }
 ```
 
@@ -57,27 +57,27 @@
 
 ```json
 {
-    "status": 200,
-    "code": 1,
-    "todos": [
-        {
-            "id": 1,
-            "text": "react.js",
-            "done": 0
-        },
-        {
-            "id": 2,
-            "text": "node.js",
-            "done": 0
-        },
-        {
-            "id": 3,
-            "text": "mysql",
-            "done": 0
-        }
-     ],
-     
-     "desc": "successful todos"
+    "status": 200,
+    "code": 1,
+    "todos": [
+        {
+            "id": 1,
+            "text": "react.js",
+            "done": 0
+        },
+        {
+            "id": 2,
+            "text": "node.js",
+            "done": 0
+        },
+        {
+            "id": 3,
+            "text": "mysql",
+            "done": 0
+        }
+     ],
+     
+     "desc": "successful todos"
 }
 ```
 
@@ -106,24 +106,24 @@ axios.put('/api/todo/2');
  "status": 200,
  "code": 1,
  "todos": [
-     {
-         "id": 1,
-         "text": "react.js",
-         "done": 0
-     },
-     {
-         "id": 2,
-         "text": "node.js",
-         "done": 1           // 수행상태를 토글
-     },
-     {
-         "id": 3,
-         "text": "mysql",
-         "done": 0
-     }
- ],
- 
- "desc": "successful Response"
+     {
+         "id": 1,
+         "text": "react.js",
+         "done": 0
+     },
+     {
+         "id": 2",
+         "text": "node.js",
+         "done": 1           //수행상태 토글
+     },
+     {
+         "id": 3,
+         "text": "mysql",
+         "done": 0
+      }
+  ],
+  
+  "desc": "successful Response"
 }
 ```
 
@@ -157,14 +157,14 @@ axios.delete('/api/todo/1');
             "text": "node.js",
             "done": 1
         },
-        {
+        {
             "id": 3,
             "text": "mysql",
-            "done": 0
-        }
-    ],
+            "done": 0
+        }
+    ],
     
-  "desc": "successful Response"
+    "desc": "successful Response"
 }
 ```
 
